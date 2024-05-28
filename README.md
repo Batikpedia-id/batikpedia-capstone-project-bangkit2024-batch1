@@ -1,0 +1,1 @@
+# batikpedia-capstone-project-bangkit2024-batch1
