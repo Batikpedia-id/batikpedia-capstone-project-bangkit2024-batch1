@@ -42,29 +42,29 @@ Now, depthwise separable convolutions break this down into two simpler steps:
 
 3. **Mathematics**
 
-  Here’s a quick peek into the math:
+Here’s a quick peek into the math:
 
-  **Regular Convolution**
+**Regular Convolution**
 
-  * If we have an input of size $H \times W \times D_{in}$ (height, width, depth of input channels), and a filter of size $F \times F \times D_{in} \times D_{out}$, the output size will be $H \times W \times D_{out}$.
+* If we have an input of size $H \times W \times D_{in}$ (height, width, depth of input channels), and a filter of size $F \times F \times D_{in} \times D_{out}$, the output size will be $H \times W \times D_{out}$.
 
-  * The number of operations is $H \times W \times F^2 \times D_{in} \times D_{out}$.
+* The number of operations is $H \times W \times F^2 \times D_{in} \times D_{out}$.
 
-  **Depthwise Separable Convolution**
+**Depthwise Separable Convolution**
 
-  * **Depthwise:** We use $D_{in}$ filters of size $F \times F$, one for each input channel. This gives us $H \times W \times D_{in}$ outputs, with operations $H \times W \times F^2 \times D_{in}$.
+* **Depthwise:** We use $D_{in}$ filters of size $F \times F$, one for each input channel. This gives us $H \times W \times D_{in}$ outputs, with operations $H \times W \times F^2 \times D_{in}$.
 
-  * **Pointwise:** Then, we apply $1 \times 1 \times D_{in} \times D_{out}$ filter to combine these, resulting in $H \times W \times D_{out}$, with operations $H \times W \times D_{in} \times D_{out}$.
+* **Pointwise:** Then, we apply $1 \times 1 \times D_{in} \times D_{out}$ filter to combine these, resulting in $H \times W \times D_{out}$, with operations $H \times W \times D_{in} \times D_{out}$.
 
-  Overall, we get:
+Overall, we get:
 
-  $H \times W \times F^2 \times D_{in} + H \times W \times D_{in} \times D_{out}$
+$H \times W \times F^2 \times D_{in} + H \times W \times D_{in} \times D_{out}$
 
-  $H \times W \times D_{in} (F^2 + D_{out})$
+$H \times W \times D_{in} (F^2 + D_{out})$
 
-  This is fewer operations than a regular convolution, making it faster and more efficient.
+This is fewer operations than a regular convolution, making it faster and more efficient.
 
-5. **Xception Architecture**
+4. **Xception Architecture**
 
 ![Xception Architecture](Xception_Architecture.png)
 
