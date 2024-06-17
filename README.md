@@ -94,9 +94,23 @@ In short, Xception's genius lies in breaking down the problem into simpler piece
 
 ![Xception Accuracy & Loss Plot](Xception_Accuracy_Loss_Plot.png)
 
+The plot of our Xception model's training history reveals promising performance, with training accuracy stabilizing around 92-94% and validation accuracy at 85-87%. While there is a slight gap indicating some overfitting, the model shows good generalization on unseen data. This suggests a robust model but leaves room for further tuning to close the gap.
+
 ![Xception Classification Report](Xception_Classification_Report.png)
 
+Our Xception model demonstrates strong performance across the seven batik classes. Precision, recall, and F1-scores are high, particularly for Batik Kawung and Batik Parang, which achieve perfect precision and recall. The overall accuracy is 91%, with a macro average F1-score of 91% respectively. This suggests that the model effectively distinguishes between different batik patterns with high reliability.
+
 ![Xception Confusion Matrix](Xception_Confusion_Matrix.png)
+
+The confusion matrix highlights the effectiveness of our Xception model in classifying batik patterns. Most classes are well-predicted with few misclassifications. Notable observations include:
+
+* **Batik Cendrawasih:** High accuracy with minor confusion with Batik Tambal.
+
+* **Batik Parang:** Some misclassifications mainly with Batik Megamendung.
+
+* **Batik Poleng:** Perfect classification with no mispredictions.
+
+Overall, the model shows strong performance with most patterns correctly classified, reflecting its ability to accurately differentiate between diverse batik styles.
 
 ## References
 
