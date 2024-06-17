@@ -40,7 +40,31 @@ Now, depthwise separable convolutions break this down into two simpler steps:
 
 * **Pointwise Convolution:** After looking at each channel separately, we use a 1x1 convolution to mix these separate insights together. It’s like combining the red, green, and blue perspectives to form a full-color understanding.
 
-3. **Xception Architecture**
+3. **Mathematics**
+
+Here’s a quick peek into the math:
+
+**Regular Convolution**
+
+* If we have an input of size $H \times W \times D_{in}$ (height, width, depth of input channels), and a filter of size $F \times F \times D_{in} \times D_{out}$, the output size will be $H \times W \times D_{out}$.
+
+* The number of operations is $H \times W \times F^2 \times D_{in} \times D_{out}$.
+
+**Depthwise Separable Convolution**
+
+* **Depthwise:** We use $D_{in}$ filters of size $F \times F$, one for each input channel. This gives us $H \times W \times D_{in}$ outputs, with operations $H \times W \times F^2 \times D_{in}$.
+
+* **Pointwise:** Then, we apply $1 \times 1 \times D_{in} \times D_{out}$ filter to combine these, resulting in $H \times W \times D_{out}$, with operations $H \times W \times D_{in} \times D_{out}$.
+
+Overall, we get:
+
+$H \times W \times F^2 \times D_{in} + H \times W \times D_{in} \times D_{out}$
+
+$H \times W \times D_{in} (F^2 + D_{out})$
+
+This is fewer operations than a regular convolution, making it faster and more efficient.
+
+5. **Xception Architecture**
 
 ![Xception Architecture](Xception_Architecture.png)
 
@@ -56,11 +80,11 @@ Xception takes this depthwise separable convolution idea to the extreme. Instead
 
 Each of these flows has layers connected by something called residual connections, which are like shortcuts that help the model learn better and faster.
 
-4. **Why It is Cool?**
+5. **Why It is Cool?**
 
-The real win with Xception is how it efficiently uses its parameters. Because it simplifies the convolutions, it can use the same number of parameters as older models (like Inception V3) but get better performance. Imagine cleaning your house with a more effective vacuum—less effort, but a cleaner house.
+The real win with Xception is how it efficiently uses its parameters. Because it simplifies the convolutions, it can use the same number of parameters as older models (like Inception V3) but get better performance. Imagine cleaning our house with a more effective vacuum—less effort, but a cleaner house.
 
-5. **Final Thoughts**
+6. **Final Thoughts**
 
 Xception shows that by separating and simplifying the tasks that convolutions do, we can build a faster and more powerful model. It’s like turning a complicated cooking recipe into a series of easy-to-follow steps that still make a delicious meal.
 
