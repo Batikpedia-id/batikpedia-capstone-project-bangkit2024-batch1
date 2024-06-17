@@ -68,6 +68,14 @@ Xception shows that by separating and simplifying the tasks that convolutions do
 
 In short, Xception's genius lies in breaking down the problem into simpler pieces, handling them separately, and then combining the results in a smart way to get the job done better and faster.
 
+## Result
+
+![Xception Accuracy & Loss Plot](Xception_Accuracy_Loss_Plot.png)
+
+![Xception Classification Report](Xception_Classification_Report.png)
+
+![Xception Confusion Matrix](Xception_Confusion_Matrix.png)
+
 ## References
 
 * TensorFlow Documentation: https://www.tensorflow.org/
