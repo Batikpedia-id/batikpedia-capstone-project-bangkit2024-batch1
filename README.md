@@ -2,8 +2,6 @@
   <h1 align="center"><b>Batikpedia.Id</b></h1>
 </p>
 
-# **Batik Image Classification**
-
 ## **Table of Contents**
 
 1. [Introduction](#introduction)
@@ -17,7 +15,20 @@
 
 ## **Introduction**
 
-This project aims to classify various types of Batik images using a deep learning model. The model is built using TensorFlow and trained on a dataset of Batik patterns.
+In today's digital era, many people are unaware of the rich history and varieties of Batik patterns. Small and medium-sized enterprises (SMEs) selling Batik products often struggle to reach a wider market. Additionally, there is a lack of interactive technology that allows consumers to visualize how different Batik designs might look on them before making a purchase.
+
+**Batikpedia** aims to bridge these gaps by using mobile development, machine learning, and cloud computing to educate users, promote Batik SMEs, and enhance the shopping experience with augmented reality features. This project focuses on developing a mobile application that can classify Batik patterns, provide historical information, and support SMEs, thereby making Batik culture accessible and engaging for a global audience.
+
+### Goals:
+- Preserve the rich heritage of Batik by promoting its diversity.
+- Provide a platform for local Batik artisans and businesses to reach a wider audience.
+- Utilize advanced computer vision and machine learning techniques to classify Batik patterns from images.
+- Integrate an intuitive user interface and a comprehensive database of local SME Batik shops.
+
+### Key Features:
+- **Classification of Batik Patterns**: Users can capture or upload images of Batik fabric, which will then be analyzed and classified.
+- **Historical Information**: Provides historical context and information about various Batik patterns.
+- **MSMEs Promotion**: Connects users with local SME shops selling specific Batik patterns.
 
 ## **Libraries and Tools**
 
@@ -162,7 +173,7 @@ train_generator, validation_generator = train_val_generators(train_dir)
 
 ### **Xception Model**
 
-#### **Load Pre-trained Xception
+#### **Load Pre-trained Xception**
 
 ```python
 tf.keras.backend.clear_session()
