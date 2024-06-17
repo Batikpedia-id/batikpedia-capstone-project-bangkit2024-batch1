@@ -40,7 +40,7 @@ Now, depthwise separable convolutions break this down into two simpler steps:
 
 * **Pointwise Convolution:** After looking at each channel separately, we use a 1x1 convolution to mix these separate insights together. It’s like combining the red, green, and blue perspectives to form a full-color understanding.
 
-3. **Mathematics**
+3. **Mathematics 😎**
 
 Here’s a quick peek into the math:
 
