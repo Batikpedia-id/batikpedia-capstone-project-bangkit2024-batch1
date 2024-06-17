@@ -15,7 +15,7 @@
 
 ## **Introduction**
 
-In today's digital era, many people are unaware of the rich history and varieties of Batik patterns. Small and medium-sized enterprises (SMEs) selling Batik products often struggle to reach a wider market. Additionally, there is a lack of interactive technology that allows consumers to visualize how different Batik designs might look on them before making a purchase.
+In today's digital era, many people are unaware of the rich history and varieties of Batik patterns. Micro, Small, and Medium Enterprises (SMEs) selling Batik products often struggle to reach a wider market. Additionally, there is a lack of interactive technology that allows consumers to visualize how different Batik designs might look on them before making a purchase.
 
 **Batikpedia** aims to bridge these gaps by using mobile development, machine learning, and cloud computing to educate users, promote Batik SMEs, and enhance the shopping experience with augmented reality features. This project focuses on developing a mobile application that can classify Batik patterns, provide historical information, and support SMEs, thereby making Batik culture accessible and engaging for a global audience.
 
