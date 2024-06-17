@@ -178,7 +178,9 @@ Now, depthwise separable convolutions break this down into two simpler steps:
 
 3. **Xception Architecture**
 
+![Xception Architecture](Xception Architecture.png)
 
+*Figure 1: Xception Architecture.* [Source: "Xception Model Architecture"]([https://link-to-paper.com](https://arxiv.org/abs/1610.02357))
 
 Xception takes this depthwise separable convolution idea to the extreme. Instead of just using it occasionally like in Inception, Xception uses it throughout the network. The architecture has a series of these layers stacked together:
 
