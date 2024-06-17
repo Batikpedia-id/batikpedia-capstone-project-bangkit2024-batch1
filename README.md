@@ -19,17 +19,6 @@ In today's digital era, many people are unaware of the rich history and varietie
 
 **Batikpedia** aims to bridge these gaps by using mobile development, machine learning, and cloud computing to educate users, promote Batik SMEs, and enhance the shopping experience with augmented reality features. This project focuses on developing a mobile application that can classify Batik patterns, provide historical information, and support SMEs, thereby making Batik culture accessible and engaging for a global audience.
 
-### Goals:
-- Preserve the rich heritage of Batik by promoting its diversity.
-- Provide a platform for local Batik artisans and businesses to reach a wider audience.
-- Utilize advanced computer vision and machine learning techniques to classify Batik patterns from images.
-- Integrate an intuitive user interface and a comprehensive database of local SME Batik shops.
-
-### Key Features:
-- **Classification of Batik Patterns**: Users can capture or upload images of Batik fabric, which will then be analyzed and classified.
-- **Historical Information**: Provides historical context and information about various Batik patterns.
-- **MSMEs Promotion**: Connects users with local SME shops selling specific Batik patterns.
-
 ## **Libraries and Tools**
 
 The following libraries and tools are used in this project:
